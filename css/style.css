@@ -213,7 +213,7 @@ a {
 }
 
 .cart1 img {
-    width: 259px;
+    width: 100%;
     justify-content: flex-start;
 }
 
