@@ -148,12 +148,12 @@ a {
     align-items: baseline;
 }
 
-.cards .cart {
+.cards, .cart {
     width: 100%;
 }
 
 .cart img {
-    width: 50%;
+    width: 100%;
     margin-bottom: 23px;
 }
 
@@ -284,16 +284,20 @@ a {
 
 .cards2 {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
 }
-
+.card2 {
+    width: 100%;
+}
 .cart2 {
     width: 300px;
     text-align: center;
 }
 
 .how_container .cart2 img {
+    display: flex;
+    align-items: baseline;
     width: 100%;
     height: 100%;
 }
@@ -350,7 +354,35 @@ ul a {
 .footer a:hover {
     text-decoration: underline;
 }
+@media  screen and (min-width: 768px) {
+    html {
+        font-size: 0.85px;
+    }
+    .card {
+        width: 45%;
+    }
+    .card img{
+        width: 100%;
+        max-width: 517rem;
+        max-height: 517rem;
+    }
+    .card1{
+        width: 45%;
+    }
+    .card1 img{
+        width: 100%;
+        max-width: 417rem;
+        max-height: 417rem;
+    }
 
+    .cards2{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 100px;
+    }
+    
+}
 @media screen and (min-width: 1200px){
     html{
         font-size: 1px;
@@ -361,5 +393,9 @@ ul a {
     .burger {
         display: none;
     }
+    .cards, .cards1, .cards2{
+        flex-wrap: nowrap;
+    }
+
 }
 
