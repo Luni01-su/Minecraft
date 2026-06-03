@@ -6,6 +6,7 @@
 body {
     font-family: 'Noto Sans', serif;
     cursor: url(../img/cursor.cur), auto;
+    overflow-x: hidden;
 }
 
 a {
@@ -59,29 +60,34 @@ a {
 }
 
 .logo a {
-    width: 222px;
-}
-.menu {
-    display: none;
-}
-.menu ul {
-    display: flex;
-    gap: 45px;
-    list-style: none;
+    width: 100%;
 }
 
-.menu a {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Noto Sans', serif;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
+
+.menu2{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -120%;
+    height: 89.3vh;
+    width: 80vw;
+    padding: 40rem;
+    background-color: #262423;
+    z-index: 1000;
+    transition: .5s;
+}
+.menu2 a{
+    display: block;
+    padding: 5rem 10rem;
+    font-size: 24rem;
     text-decoration: none;
     color: #fff;
-    transition: 0.3s;
 }
-
+.cancel{
+    position: absolute;
+    top: 20rem;
+    right: 20rem;
+}
 .header_top a:hover {
     color: #1dc812;
 }
@@ -381,7 +387,13 @@ ul a {
         flex-wrap: wrap;
         margin-left: 100px;
     }
-    
+    .footerr img, ul{
+        position: relative;
+        left: -20px;
+    }
+    .body {
+        overflow-x: hidden;
+    }
 }
 @media screen and (min-width: 1200px){
     html{
@@ -396,6 +408,33 @@ ul a {
     .cards, .cards1, .cards2{
         flex-wrap: nowrap;
     }
-
+    .cards2{
+        display: flex;
+        align-items: baseline;
+    }
+    .menu2 {
+        position: static;
+        height: auto;
+        width: auto;
+    }
+    .menu ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .cancel{
+        display: none;
+    }
+    .menu a {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Noto Sans', serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+    }
 }
 
