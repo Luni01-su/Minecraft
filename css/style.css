@@ -57,8 +57,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
+    padding: 10px 10px;
     background: #262423;
+    height: 100%;
 }
 
 .logo a {
@@ -111,19 +112,17 @@ a {
     height: 15px;
 }
 .burger {
-    width: 70px;
-    height: 70px;
     display: flex;
-    justify-content: center;
-    background-color: greenyellow;
+    flex-direction: column;
 }
-.burger span{
-    display: flex;
-    justify-content: center;
+.burger span:nth-child(2){
+    display: block;
+    height: 10px;
+    width: 60px;
+    background-color: green;
+    gap: 20px;
 }
-.burger span:nth-child(even){
-    background-color: green
-}
+
 .button_container a:hover {
     background-color: #6cc349;
     color: #fff;
@@ -379,10 +378,24 @@ ul a {
         height: 25px;
         width: 50%
     }
-    
+    .card2 {
+        margin: 20px 0 20px;
+    }
+    .how_container h2 {
+        font-size: 40px;
+    }
+    .newest_container h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+        padding-top: 30px;
+    }
+    .discover_container h1{
+        font-size: 35px;
+        margin-bottom: 20px;
+        padding-top: 30px;
+    }
     .header .how_container,.newest_container, .discover_container{
         background-size: 100%;
-        margin-top: 20px;
         padding: 0px;
     }
     .cards2{
@@ -393,6 +406,9 @@ ul a {
     .logo_bottom a{
         width: 50%;
         gap: 10px;
+    }
+    .footerr{
+        gap: 20px;
     }
     .footer ul{
         display: none;
