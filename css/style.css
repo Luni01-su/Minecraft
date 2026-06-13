@@ -3,7 +3,7 @@
     padding: 0;
 }
 html {
-    font-size: 1px;
+    font-size: .75px;
 }
 body {
     font-family: 'Noto Sans', serif;
@@ -116,7 +116,13 @@ a {
     display: flex;
     justify-content: center;
     background-color: greenyellow;
-
+}
+.burger span{
+    display: flex;
+    justify-content: center;
+}
+.burger span:nth-child(even){
+    background-color: green
 }
 .button_container a:hover {
     background-color: #6cc349;
@@ -260,7 +266,7 @@ a {
 }
 
 .how_container {
-    padding: 80px;
+    padding: 30px;
     background: #4f1030;
 }
 
@@ -299,7 +305,7 @@ a {
     width: 100%;
 }
 .cart2 {
-    width: 300px;
+    width: 100%;
     text-align: center;
 }
 
@@ -330,7 +336,9 @@ ul a {
 .footer {
     padding: 32px 24px 27px 9px;
 }
-
+.footer img{
+    width: 100%;
+}
 .footerr {
     display: flex;
     justify-content: space-between;
@@ -339,11 +347,7 @@ ul a {
     max-width: 1440px;
 }
 
-.footer .logoandul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .footer ul {
     display: flex;
     align-items: center;
@@ -362,11 +366,43 @@ ul a {
 .footer a:hover {
     text-decoration: underline;
 }
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 0.75px;
+    }
 
+    .logo img{
+       width: 100%;
+    }
+    .burger{
+        margin: 0 10px 0 10px;
+        height: 25px;
+        width: 50%
+    }
+    
+    .header .how_container,.newest_container, .discover_container{
+        background-size: 100%;
+        margin-top: 20px;
+        padding: 0px;
+    }
+    .cards2{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .logo_bottom a{
+        width: 50%;
+        gap: 10px;
+    }
+    .footer ul{
+        display: none;
+    }
+}
 @media  screen and (min-width: 768px) {
     html {
         font-size: 0.85px;
     }
+
     .card {
         width: 45%;
     }
@@ -393,9 +429,6 @@ ul a {
     .footerr img, ul{
         position: relative;
         left: -20px;
-    }
-    .body {
-        overflow-x: hidden;
     }
 }
 @media screen and (min-width: 1200px){
