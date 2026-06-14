@@ -501,11 +501,11 @@ ul a {
 }
 @media screen and (min-width: 1920px){
     html{
-        font-size: 1.3px;
+        font-size: 1.5px;
     }
 }
-@media screen and (min-width: 2200px){
+@media screen and (min-width: 2560px){
     html{
-        font-size: 1.5px;
+        font-size: 2px;
     }
 }
